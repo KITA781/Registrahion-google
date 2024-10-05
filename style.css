@@ -1,0 +1,90 @@
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background-color: #f9f9f9;
+}
+
+.box {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.register-text {
+    color: green;
+}
+
+.instructions {
+    color: #3d3d3d;
+}
+
+.input-field {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.divider-line {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.divider-text {
+    padding: 0 10px;
+    color: #3d3d3d;
+}
+
+.social-button {
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 20px;
+    margin-right: 10px;
+}
