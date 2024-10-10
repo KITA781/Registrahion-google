@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+}
+
+header {
+    padding-top: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+}
+
+header nav ul {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+
+header .logo {
+    margin-bottom: 17px;
+}
+
+header nav a {
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+header .login {
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 17px;
+    background: #46a358;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    transition: 0.6s;
+    margin-bottom: 18px;
+}
+
+header .login:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("images/login.svg"); 
+    margin-right: 4px;
+
+}
+
+
+header nav li:after {
+    display: block;
+    width: 0;
+    content: "";
+    background-color: #46a358;
+    height: 3px;
+    margin-top: 25px;
+    transition: 0.4s;
+}
+
+header nav li:hover:after {
+    width: 100%;
+}
+
+
+
+
+
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 50px 0;
+}
+
+
+section {
+    display: flex; 
+    align-items: center; 
+}
+
+
+.text-content {
+    max-width: 50%; 
+    padding-right: 20px; 
+    
+}
+
+
+.text-content h1 {
+    font-size: 3rem; 
+    color: #333;
+}
+
+.text-content h1 span {
+    color: #46a358; 
+}
+
+.text-content p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+
+.shop-now-btn {
+    padding: 15px 40px;
+    background-color: #46a358;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.shop-now-btn:hover {
+    background-color: #388e3c; 
+}
+
+
+section img {
+    max-width: 45%; 
+    height: auto;
+    border-radius: 10px;
+}
