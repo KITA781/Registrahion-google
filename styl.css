@@ -131,8 +131,6 @@ p {
     background-color: #45a049;
 }
 
-
-
 .container1 {
     max-width: 1200px;
     display: flex;
@@ -209,6 +207,7 @@ p {
     justify-content: space-between; 
     max-width: 100%; 
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .product_sort ul {
@@ -218,7 +217,6 @@ p {
 
 .product_sort ul li {
     margin-right: 20px;
-    position: relative; 
 }
 
 .product_sort ul li a {
@@ -261,18 +259,35 @@ p {
 
 .product_grid {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: space-between; 
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    position: relative;
 }
 
 .product_grid article {
+    position: relative;
     background-color: #ffffff;
     padding: 10px;
     text-align: left;
     flex: 1 1 30%;
-    max-width: 300px; 
+    max-width: 300px;
     box-sizing: border-box;
+    border-top: solid 1px transparent;
+    overflow: hidden;
+}
+
+.product_grid article:hover {
+    border-top: solid 1px #46A358;
+}
+
+.product_grid article .discount {
+    position: absolute;
+    background-color: #46A358;
+    padding: 7px 8px 6px 9px;
+    color: white;
+    left: 0px;
+    top: 14px;
 }
 
 .image_container {
@@ -284,7 +299,10 @@ p {
     max-width: 100%;
     height: 300px;
     object-fit: cover;
+    transition: transform 0.3s ease; 
 }
+
+
 
 .product_grid .product_name {
     color: black;
@@ -301,6 +319,68 @@ p {
     text-align: left;
 }
 
+.icon-container {
+    position: absolute;
+    bottom: 70px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 10px; 
+    display: none;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 8px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.icon.cart {
+    background-image: url('images/shopping 2.svg'); 
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.icon.heart {
+    background-image: url('images/heart 2.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.icon.search {
+    background-image: url('images/Frame 2.svg'); 
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.icon.cart:hover {
+    background-image: url('images/shopping 1.svg'); 
+}
+
+.icon.heart:hover {
+    background-image: url('images/heart 1.svg'); 
+}
+
+.icon.search:hover {
+    background-image: url('images/Frame 1.svg'); 
+}
+
+
+.icons-container:hover .icon-container {
+    display: flex;
+}
+
+
 .pagination {
     margin-top: 20px;
     display: flex;
@@ -315,17 +395,20 @@ p {
 }
 
 .pagination li {
-    margin-right: 10px;
+    margin-right: 5px;
     position: relative;
 }
 
 .pagination a {
     text-decoration: none;
     color: #000;
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #ddd;
-    padding: 5px 10px;
     border-radius: 5px;
-    display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -339,30 +422,28 @@ p {
     color: #fff;
 }
 
-.pagination li.next {
+.pagination li.next a {
     display: inline-flex;
     align-items: center;
-}
-
-.pagination li.next::after {
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url('images/Arrow - Right 1.svg');
-    background-size: contain;
+    justify-content: center;
+    width: 35px; 
+    height: 35px; 
+    background-image: url('images/Arrow - Right 2.svg');
     background-position: center;
+    background-size: 60%; 
     background-repeat: no-repeat;
-    margin-left: 5px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    transition: background-image 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
-    padding: 5px 10px;
 }
 
-.pagination li.next:hover::after {
+
+.pagination li.next a:hover {
+    background-image: url('images/Arrow\ -\ Right\ 2-2.svg');
     background-color: #4CAF50;
 }
+
 
 .promo-section {
     margin-top: 50px;
@@ -435,7 +516,7 @@ p {
     display: inline-block;
     width: 16px; 
     height: 16px;
-    background-image: url('images/Arrow - Right 2.svg'); 
+    background-image: url('images/Arrow - Right.svg'); 
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 8px;
@@ -541,7 +622,7 @@ p {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url('images/Arrow - Right 3.svg');
+    background-image: url('images/Arrow\ -\ Right\ 3.svg');
     background-size: 100%;
     background-repeat: no-repeat;
     margin-left: 8px;
@@ -552,4 +633,5 @@ p {
     background-size: 100%;
     width: 16px;
     height: 16px;
+    
 }
