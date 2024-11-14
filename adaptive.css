@@ -1,0 +1,277 @@
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container, .container_1, .container_2, .container_4, .container_5 {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+footer {
+    max-width: 100%;
+    overflow-x: hidden; 
+    padding: 0 20px; 
+}
+
+
+@media (min-width: 992px) {
+    header .container_1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 30px;
+    }
+
+    .login {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .info-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .container_2 {
+        text-align: left;
+        max-width: 600px;
+    }
+
+    .info-section img {
+        max-width: 400px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container_2 {
+        text-align: center;
+    }
+
+    .info-section img {
+        max-width: 250px;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .container_1 {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    header .container_1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        gap: 20px;
+    }
+    
+    .login {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .theme-switcher {
+        margin-right: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    header nav a {
+        font-size: 14px;
+    }
+
+    .login {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    .login {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    header nav a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container_1 {
+        padding: 0 10px;
+    }
+    
+    header nav a {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 280px) {
+    h1 {
+        font-size: 24px;
+    }
+    .shop-now-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .product_grid article {
+        flex: 1 1 100%; 
+    }
+    .product_grid img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 28px;
+    }
+    .product_grid article {
+        flex: 1 1 100%;
+    }
+    .icon-container {
+        bottom: 40px;
+    }
+}
+
+@media (max-width: 540px) {
+    .container1 {
+        flex-direction: column; 
+        padding: 10px;
+    }
+    .left_side, .right_side {
+        flex: 1 1 100%; 
+        padding: 0;
+    }
+    .product_grid img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    .product_grid article {
+        flex: 1 1 48%; 
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 42px;
+    }
+    .product_grid article {
+        flex: 1 1 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container_2, .container1 {
+        padding: 20px;
+    }
+    .left_side {
+        max-width: 350px;
+    }
+    .top-bar {
+        padding: 20px 40px;
+    }
+    .features-section {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 280px) {
+    .promo-btn {
+        padding: 8px 16px;
+    }
+    .pagination li a {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .top-bar {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+    .pagination li a {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 540px) {
+    .container_4 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .promo-item img {
+        max-width: 200px;
+    }
+    .footer-column {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-section {
+        flex-direction: column;
+    }
+    .pagination {
+        justify-content: center;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container_5 .blog-item {
+        flex: 1 1 48%;
+    }
+    .promo-item {
+        max-width: 100%;
+    }
+}
